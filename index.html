@@ -1,39 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>Taxco Think Tank</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taxco Think Tank</title>
 
-<style>
-body{
-font-family: Georgia, serif;
-text-align:center;
-margin-top:80px;
-background:white;
-color:#111;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
-h1{
-letter-spacing:3px;
-}
+  <style>
+    :root{
+      --text:#111111;
+      --muted:#5f5f5f;
+      --bg:#ffffff;
+    }
 
-</style>
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:"Inter", sans-serif;
+    }
+
+    .container{
+      max-width:900px;
+      margin:0 auto;
+      padding:72px 24px 96px;
+      text-align:center;
+    }
+
+    .logo{
+      width:min(520px, 88vw);
+      height:auto;
+      display:block;
+      margin:0 auto 40px;
+    }
+
+    .slogan{
+      font-family:"Libre Baskerville", serif;
+      font-size:clamp(1.2rem, 2vw, 1.7rem);
+      line-height:1.6;
+      margin:0 0 34px;
+      color:var(--text);
+    }
+
+    .meta{
+      font-family:"Libre Baskerville", serif;
+      font-size:clamp(0.95rem, 1.4vw, 1.05rem);
+      line-height:1.9;
+      color:var(--muted);
+      margin:0;
+    }
+
+    .anniversary{
+      margin-top:26px;
+      font-family:"Libre Baskerville", serif;
+      font-size:clamp(1rem, 1.5vw, 1.1rem);
+      letter-spacing:0.04em;
+      color:var(--text);
+    }
+
+    .years{
+      display:block;
+      margin-top:8px;
+      font-size:0.95em;
+      color:var(--muted);
+    }
+  </style>
 </head>
-
 <body>
+  <main class="container">
+    <img src="logo.png" alt="Taxco Think Tank" class="logo">
 
-<img src="logo.png" width="500">
+    <p class="slogan">Soluciones nuevas para los problemas de siempre</p>
 
-<h1>TAXCO THINK TANK</h1>
+    <p class="meta">
+      Fundado el 2 de febrero de 2021<br>
+      Taxco, Guerrero, México
+    </p>
 
-<p><em>Soluciones nuevas para los problemas de siempre</em></p>
-
-<p>
-Fundado el 2 de febrero de 2021<br>
-Hipódromo Condesa, México
-</p>
-
-<p>Celebrando nuestro quinto aniversario</p>
-
-
+    <div class="anniversary">
+      Celebrando nuestro quinto aniversario
+      <span class="years">2021 — 2026</span>
+    </div>
+  </main>
 </body>
 </html>
